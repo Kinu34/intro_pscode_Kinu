@@ -2,3 +2,10 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+# Pseudocode for Product Package Counter
+START
+  SET total_packages to 50
+  FOR each package from 2 to total_packages step by 2
+    PRINT package
+  NEXT
+END

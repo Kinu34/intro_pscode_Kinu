@@ -2,3 +2,21 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+# Pseudocode for Guess the Number Game
+START
+  SET number_to_guess to a random number between 1 and 10
+  SET attempts to 0
+  WHILE attempts < 3
+    ASK player to guess a number between 1 and 10
+    IF player's guess equals number_to_guess
+      PRINT "Congratulations, you guessed the correct number!"
+      EXIT
+    ELSE
+      PRINT "Incorrect guess, try again."
+    ENDIF
+    INCREMENT attempts by 1
+  ENDWHILE
+  IF attempts equals 3
+    PRINT "Sorry, you're out of attempts. The correct number was " + number_to_guess
+  ENDIF
+END

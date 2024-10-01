@@ -2,3 +2,22 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+# Pseudocode for Finding a Location in a Warehouse
+START
+  SET current_position to (0, 0)
+  SET destination_position to (x, y) # specific coordinates
+  WHILE current_position is not equal to destination_position
+    PRINT "You are currently at " + current_position
+    ASK player to move (north, south, east, or west)
+    IF player inputs "north"
+      DECREMENT y coordinate of current_position
+    ELSE IF player inputs "south"
+      INCREMENT y coordinate of current_position
+    ELSE IF player inputs "east"
+      INCREMENT x coordinate of current_position
+    ELSE IF player inputs "west"
+      DECREMENT x coordinate of current_position
+    ENDIF
+  ENDWHILE
+  PRINT "You have arrived at the destination!"
+END
